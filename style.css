@@ -25,6 +25,7 @@ p {
   border-radius: 10px;
   font-size: 100px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #solution {
@@ -41,7 +42,8 @@ p {
 }
 
 #button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .loader {
@@ -55,6 +57,10 @@ p {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
